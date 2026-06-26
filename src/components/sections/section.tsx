@@ -43,18 +43,22 @@ export function Section({
     <section
       id={id}
       className={cn(
-        "mx-auto w-full max-w-[1480px] scroll-mt-20 px-6 py-24 sm:py-32",
+        "mx-auto w-full max-w-[1480px] scroll-mt-20 px-6 py-20 sm:py-28 lg:py-32",
         className,
       )}
     >
       {!bare && (
         <Reveal className="mb-12 flex flex-col gap-8">
           {eyebrow && (
-            <div className="flex items-center justify-between gap-4 border-b border-border/60 pb-4 font-mono text-[0.7rem] uppercase tracking-[0.2em] text-muted-foreground">
+            <div className="flex flex-col gap-2 border-b border-border/60 pb-4 font-mono text-[0.6rem] uppercase tracking-[0.12em] text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:text-[0.7rem] sm:tracking-[0.2em]">
               <span>© {eyebrow}</span>
-              <span className="flex items-center gap-4">
-                {index && <span>(WDX® — {index})</span>}
-                {label && <span className="text-foreground">{label}</span>}
+              <span className="flex flex-wrap items-center gap-x-4 gap-y-1">
+                {index && <span className="whitespace-nowrap">(WDX® — {index})</span>}
+                {label && (
+                  <span className="whitespace-nowrap text-foreground">
+                    {label}
+                  </span>
+                )}
               </span>
             </div>
           )}
