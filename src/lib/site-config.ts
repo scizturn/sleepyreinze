@@ -14,7 +14,7 @@ export const siteConfig = {
     "I'm a hybrid developer and designer from Indonesia — I build modern, performant websites and web apps, and I craft motion graphics and graphic design. I care about clean interfaces, snappy load times, and visuals that move. I'm currently opening up for freelance project commissions — web, motion, design, or all three.",
   location: "Indonesia",
   // Used for SEO metadata and the contact button.
-  email: "sleepyreienze@gmail.com",
+  email: "sleepyreinze@gmail.com",
   // Set this once you deploy (used for SEO/Open Graph absolute URLs).
   url: "https://sleepyreinze.dev",
   socials: {
